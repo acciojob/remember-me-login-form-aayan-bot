@@ -20,9 +20,9 @@ checkbox.addEventListener("change",(e)=>{
     localStorage.clear()
    }
 })
+function subbtnclick() {
+    alert(`Logged in as ${username.value}`)
+}
 existing.addEventListener("click",()=>{
     alert(`Logged in as ${username.value}`)
 })
-function subbtnclick(e) {
-    alert(`Logged in as ${username.value}`)
-}
