@@ -7,7 +7,7 @@ let existing=document.getElementById("existing")
 
 let data1= JSON.parse(localStorage.getItem("object")).username
 subbtn.addEventListener("click",()=>{
-    alert(`Logged in as ${data1}`)
+    alert(`Logged in as ${username.value}`)
 })
 
 
@@ -26,5 +26,5 @@ checkbox.addEventListener("change",(e)=>{
 })
 
 existing.addEventListener("click",()=>{
-    alert(`Logged in as ${username.value}`)
+    alert(`Logged in as ${data1} `)
 })
