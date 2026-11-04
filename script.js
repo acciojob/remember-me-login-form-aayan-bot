@@ -5,6 +5,10 @@ let checkbox=document.getElementById("checkbox")
 let password=document.getElementById("password")
 let existing=document.getElementById("existing")
 
+let data1= JSON.parse(localStorage.getItem("object")).username
+subbtn.addEventListener("click",()=>{
+    alert(`Logged in as ${data1}`)
+})
 
 
 checkbox.addEventListener("change",(e)=>{
@@ -20,9 +24,7 @@ checkbox.addEventListener("change",(e)=>{
     localStorage.clear()
    }
 })
-function subbtnclick() {
-    alert(`Logged in as ${username.value}`)
-}
+
 existing.addEventListener("click",()=>{
     alert(`Logged in as ${username.value}`)
 })
