@@ -25,7 +25,7 @@ checkbox.addEventListener("change",(e)=>{
    existing.style.display="block";
    } 
    else{
-    localStorage.delete("object")
+    localStorage.removeItem("object")
    }
 })
 
