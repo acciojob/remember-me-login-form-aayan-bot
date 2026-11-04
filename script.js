@@ -5,9 +5,7 @@ let checkbox=document.getElementById("checkbox")
 let password=document.getElementById("password")
 let existing=document.getElementById("existing")
 
-function subbtnclick(e) {
-    alert(`Logged in as ${username.value}`)
-}
+
 
 checkbox.addEventListener("change",(e)=>{
      if (checkbox.checked){
@@ -25,3 +23,6 @@ checkbox.addEventListener("change",(e)=>{
 existing.addEventListener("click",()=>{
     alert(`Logged in as ${username.value}`)
 })
+function subbtnclick(e) {
+    alert(`Logged in as ${username.value}`)
+}
